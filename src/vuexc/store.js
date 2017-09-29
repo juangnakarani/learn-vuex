@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import getters from './getters.js'
 Vue.use(Vuex)
 
 const state = {
@@ -8,12 +8,13 @@ const state = {
 }
 
 const mutations = {
-    changePesan(state, msg){
-        state.msg = msg
+    changePesan(anu, msgs){
+        state.msg = msgs
     }
 }
 
 export default new Vuex.Store({
     state: state,
-    mutations: mutations
+    mutations: mutations,
+    getters, getters
 });

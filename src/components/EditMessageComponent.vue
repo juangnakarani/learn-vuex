@@ -7,10 +7,9 @@
 <script>
 export default {
   name: 'show',
-  props: ['msg'],
   computed: {
     msg: function (){
-      return this.$store.state.msg
+      return this.$store.getters.getMessage
     }
   },
   methods:{

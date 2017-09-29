@@ -8,8 +8,8 @@
 export default {
   name: 'edit',
   computed: {
-    msg () {
-      return this.$store.state.msg
+    msg: function () {
+      return this.$store.getters.getMessage
     }
   }
 }
