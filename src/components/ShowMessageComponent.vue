@@ -7,7 +7,6 @@
 <script>
 export default {
   name: 'edit',
-  props: ['msg'],
   computed: {
     msg () {
       return this.$store.state.msg

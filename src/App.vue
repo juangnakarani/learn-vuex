@@ -9,7 +9,7 @@
 <script>
 import ShowMessageComponent from './components/ShowMessageComponent.vue'
 import EditMessageComponent from './components/EditMessageComponent.vue'
-import store from './vuex/store'
+import store from './vuexc/store.js'
 export default {
   components: {
     ShowMessageComponent,
